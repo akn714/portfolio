@@ -1,0 +1,228 @@
+#main{
+    /* background: gray; */
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#main > div {
+    height: 100%;
+    width: 50%;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.name{
+    display: flex;
+    gap: 6px;
+    font-size: 50px;
+    color: #e3e3e3;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.name-main{
+    color: #e52424;
+    color: #c70c3e;
+}
+.small-desc{
+    width: 440px;
+    color: #bfbfbf;
+    font-family: system-ui;
+    font-size: 14px;
+}
+
+.right > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+.right .img{
+    height: 50%;
+    width: 40%;
+    background: gray;
+    position: absolute;
+    right: 42%;
+    bottom: 45%;
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.profile-links{
+    height: 370px;
+    width: 400px;
+    box-shadow: 0px 0px 22px -12px gray;
+    border-radius: 6px 0px 0px 0px;
+    background: #212428;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+a.profiles {
+    display: flex;
+    position: relative;
+    top: 160px;
+    left: 38px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+.website-logo{
+    width: 40px;
+}
+.profile-links a img {
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ######################################################################### */
+
+.deco1{
+    position: absolute;
+    top: -250px;
+    right: -160px;
+    height: 730px;
+    width: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deco1 .box1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: rotation1 60s linear infinite;
+}
+.deco1 .box2{
+    height: 97%;
+    width: 97%;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-bottom: 2px solid #f2f2f2;
+    border-top: 2px solid #0cb4c7;
+    animation: rotation2 80s linear infinite;
+}
+
+.deco1 .big-circle{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.deco1 .small-circle{
+    position: absolute;
+    z-index: unset;
+    border-radius: 50%;
+}
+.deco1 .small1{
+    height: 25px;
+    width: 25px;
+    background: #0964b5;
+    top: 180px;
+}
+.deco1 .small2{
+    background: #c70c3e;
+    bottom: 80px;
+    right: 40px;
+    height: 30px;
+    width: 30px;
+}
+
+@keyframes rotation1{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+@keyframes rotation2{
+    from{ transform: rotate(360deg); }
+    to{ transform: rotate(-360deg); }
+}
+
+.deco2{
+    position: absolute;
+    bottom: -500px;
+    left: -300px;
+    height: 730px;
+    width: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deco2 .box1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: rotation3 100s linear infinite;
+}
+.deco2 .box2{
+    height: 97%;
+    width: 97%;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-bottom: 2px solid #f2f2f2;
+    border-top: 2px solid #0cb4c7;
+    animation: rotation4 120s linear infinite;
+}
+
+.deco2 .big-circle{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+}
+.deco2 .small-circle{
+    position: absolute;
+    z-index: unset;
+    border-radius: 50%;
+    /* top: 0; */
+}
+.deco2 .small1{
+    height: 14px;
+    width: 14px;
+    background: #0964b5;
+    top: 180px;
+}
+.deco2 .small2{
+    background: #c70c3e;
+    bottom: 80px;
+    right: 40px;
+    height: 6px;
+    width: 6px;
+}
+
+@keyframes rotation3{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+@keyframes rotation4{
+    from{ transform: rotate(360deg); }
+    to{ transform: rotate(-360deg); }
+}

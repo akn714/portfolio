@@ -1,5 +1,12 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+html{
+  overflow: hidden;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+#root{
+  height: 100vh;
+  background-color: #00040e;
+  background-color: #212428;
 }

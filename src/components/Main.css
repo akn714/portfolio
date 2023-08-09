@@ -37,6 +37,46 @@ div#main > div {
     font-size: 14px;
 }
 
+.links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 12px;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.links a{
+    color: #ffffffc2;
+    text-decoration: none;
+}
+
+.follow-me-on-github{
+    background: linear-gradient(45deg, #0c1bc7, #a734ff);
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: transparent;
+    box-shadow: 0px 0px 10px -6px #7738f3;
+    gap: 10px;
+}
+
+.get-in-touch{
+    background: gray;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: transparent;
+    background: none;
+    border: 2px solid #6a2ae9;
+}
+
 .right > div{
     display: flex;
     justify-content: flex-end;
@@ -83,6 +123,7 @@ a.profiles {
     gap: 10px;
     color: #b3b3b3;
     text-decoration: none;
+    font-size: 12px;
 }
 .website-logo{
     width: 40px;

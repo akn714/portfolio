@@ -14,6 +14,20 @@ export default function Main() {
               <div className="small-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cum qui architecto totam quaerat veniam reprehenderit vel similique perferendis? In excepturi error voluptas dolorem, perspiciatis iste quibusdam voluptatibus ab doloribus laborum! Non soluta, voluptates ratione est reiciendis impedit repellendus a!
               </div>
+              <div className="links">
+                <a href="https://github.com/adarshkumar714" target='_blank' className="follow-me-on-github">
+                  <div>
+                    Follow me on Github
+                  </div>
+                  <img src="./github-mark.png" alt="" style={{height:'32px'}} />
+                </a>
+                 {/* gmail link here */}
+                <a href="#" style={{color:'#8f64e5'}} target='_blank' className="get-in-touch">
+                  <div>
+                    Get in Touch
+                  </div>
+                </a>
+              </div>
           </div>
         </div>
         <div className="right">
@@ -24,20 +38,20 @@ export default function Main() {
             <div className="profile-links">
               <a href='https://github.com/adarshkumar714' className="profiles github" target='_blank'>
                 <div className="website-logo">
-                  <img src="./github-mark/github-mark-white.png" alt="github" style={{height:'33px'}} />
+                  <img src="./github-mark-white.png" alt="github" style={{height:'33px'}} />
                 </div>
                 <p>/adarshkumar714</p>
               </a>
               <a href='https://www.linkedin.com/in/adarsh-kumar-123a34231' className="profiles linkedin" target='_blank'>
                 <div className="website-logo">
-                  <img src="./LinkedIn-Logos/LI-In-Bug.png" alt="linkedin" style={{height:'28px'}} />
+                  <img src="./LI-In-Bug.png" alt="linkedin" style={{height:'28px'}} />
                 </div>
                 <p>in/adarsh-kumar-123a34231</p>
               </a>
               <a href='https://twitter.com/AdarshK43393714' className="profiles tweeter" target='_blank'>
                 <div className="website-logo">
                   <img src="./twitter-logo.png" alt="twitter" style={{height:'38px'}} />
-                </div>
+                </div>  
                 <p>/AdarshK43393714</p>
               </a>
               <a href='#' className="profiles tweeter" target='_blank'>

@@ -22,19 +22,20 @@ div#main > div {
     display: flex;
     gap: 6px;
     font-size: 50px;
-    color: #e3e3e3;
+    color: #898989;
     font-weight: bolder;
     font-family: sans-serif;
 }
 .name-main{
-    color: #e52424;
     color: #c70c3e;
+    color: #782cee;
 }
 .small-desc{
     width: 440px;
-    color: #bfbfbf;
+    color: #797979;
     font-family: system-ui;
-    font-size: 14px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .links{
@@ -108,7 +109,7 @@ div#main > div {
     width: 400px;
     box-shadow: 0px 0px 22px -12px gray;
     border-radius: 6px 0px 0px 0px;
-    background: #212428;
+    background: #e3ecff;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -116,14 +117,14 @@ div#main > div {
 a.profiles {
     display: flex;
     position: relative;
-    top: 160px;
+    top: 130px;
     left: 38px;
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #b3b3b3;
+    color: #373737;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
 }
 .website-logo{
     width: 40px;

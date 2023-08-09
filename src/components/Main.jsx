@@ -12,7 +12,7 @@ export default function Main() {
                   <div className="name-main">Adarsh Kumar</div>
               </div>
               <div className="small-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cum qui architecto totam quaerat veniam reprehenderit vel similique perferendis? In excepturi error voluptas dolorem, perspiciatis iste quibusdam voluptatibus ab doloribus laborum! Non soluta, voluptates ratione est reiciendis impedit repellendus a!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cum qui architecto totam quaerat veniam reprehenderit vel similique perferendis?
               </div>
               <div className="links">
                 <a href="https://github.com/adarshkumar714" target='_blank' className="follow-me-on-github">
@@ -22,7 +22,7 @@ export default function Main() {
                   <img src="./github-mark.png" alt="" style={{height:'32px'}} />
                 </a>
                  {/* gmail link here */}
-                <a href="#" style={{color:'#8f64e5'}} target='_blank' className="get-in-touch">
+                <a href="#" style={{color:'rgb(106 42 233)'}} target='_blank' className="get-in-touch">
                   <div>
                     Get in Touch
                   </div>
@@ -32,13 +32,13 @@ export default function Main() {
         </div>
         <div className="right">
           <div>
+            <div className="profile-links">
             <div className="img">
               <img  className="navbar-profile-pic" src="./user-profile.png" alt="" />
             </div>
-            <div className="profile-links">
               <a href='https://github.com/adarshkumar714' className="profiles github" target='_blank'>
                 <div className="website-logo">
-                  <img src="./github-mark-white.png" alt="github" style={{height:'33px'}} />
+                  <img src="./github-mark.png" alt="github" style={{height:'33px'}} />
                 </div>
                 <p>/adarshkumar714</p>
               </a>
@@ -54,7 +54,7 @@ export default function Main() {
                 </div>  
                 <p>/AdarshK43393714</p>
               </a>
-              <a href='#' className="profiles tweeter" target='_blank'>
+              <a href='mailto:adarshkumar20012704@gmail.com' className="profiles tweeter" target='_blank'>
                 <div className="website-logo">
                   <img src="./Gmail-Logo.png" alt="twitter" style={{height:'24px'}} />
                 </div>

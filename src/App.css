@@ -9,6 +9,7 @@ body{
   height: 100vh;
   background-color: #00040e;
   background-color: #212428;
+  background-color: #e3ecff;
 
   
   position: absolute;
@@ -17,7 +18,7 @@ body{
 }
 
 /* 1st phase */
-.deco1{
+/* .deco1{
   position: absolute;
   top: -250px;
   right: -160px;
@@ -36,4 +37,4 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */

@@ -5,49 +5,59 @@ export default function Navbar() {
 
     useEffect(()=>{
         for(let i=0;i<5;i++){
-            document.querySelectorAll('.navbar-links div')[i].addEventListener('mouseover', (e)=>{
+            document.querySelectorAll('.navbar-links a')[i].addEventListener('mouseover', (e)=>{
                 if(e.target.children[0]==undefined){
-                    e.target.style.color = '#c70c3e'
+                    e.target.style.color = '#6a2ae9'
                 }
                 if(e.target.children[0]!=undefined){
-                    e.target.children[0].style.color = '#c70c3e'
+                    e.target.children[0].style.color = '#6a2ae9'
                 }
             })
         }
         for(let i=0;i<5;i++){
-            document.querySelectorAll('.navbar-links div')[i].addEventListener('mouseout', (e)=>{
+            document.querySelectorAll('.navbar-links a')[i].addEventListener('mouseout', (e)=>{
                 if(e.target.children[0]==undefined){
-                    e.target.style.color = '#c9c9c9'
+                    e.target.style.color = '#9d32fb'
                 }
                 if(e.target.children[0]!=undefined){
-                    e.target.children[0].style.color = '#c9c9c9'
+                    e.target.children[0].style.color = '#9d32fb'
                 }
             })
         }
+        document.querySelector('.navbar-links').style.width = '0%'
+        document.querySelector('.navbar-links').style.paddingLeft = '0px'
     })
 
   return (
     <div id='navbar'>
-        <div className="navbar-profile">
+        <a href='/' className="navbar-profile" style={{textDecoration: 'none'}}>
             <img  className="navbar-profile-pic" src="./user-profile.png" alt="" />
-            <div className="title">Know me</div>
-        </div>
+            <div className="title">Adarsh Kumar</div>
+        </a>
         <div className='navbar-links'>
-            <div className="about">
-                <a href="/about">About</a>
-            </div>
-            <div className="skills">
-                <a href="/skills">Skills</a>
-            </div>
-            <div className="projects">
-                <a href="/projects">Projects</a>
-            </div>
-            <div className="/education">
-                <a href="/education">Education</a>
-            </div>
-            <div className="contact">
-                <a href="/contact">Contact</a>
-            </div>
+            <button className="burger" onClick={(e)=>{
+                let navbarLinks = document.querySelector('.navbar-links');
+                if(navbarLinks.style.width=='0%'){
+                    document.querySelector('.burger').style.background = 'linear-gradient(45deg, #0c1bc7, #a734ff)'
+                    navbarLinks.style.width = '100%'
+                    document.querySelector('.navbar-links').style.paddingLeft = '20px'
+                }
+                else{
+                    document.querySelector('.burger').style.background = 'transparent'
+                    navbarLinks.style.width = '0%'
+                    document.querySelector('.navbar-links').style.paddingLeft = '0px'
+                    navbarLinks.style
+                }
+            }}>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+            </button>
+            <a href="/about" className="about">About</a>
+            <a href="/skills" className="skills">Skills</a>
+            <a href="/projects" className="projects">Projects</a>
+            <a href="/education" className="/education">Education</a>
+            <a href="/contact" className="contact">Contact</a>
         </div>
     </div>
   )

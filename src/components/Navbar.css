@@ -17,14 +17,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 12%;
-    font-size: 20px;
-    color: #e5e5e5; 
+    /* width: 20%; */
+    font-size: 30px;
+    color: #330074;
+    font-family: "Lovely Home";
 }
 .navbar-profile img{
     height: 100%;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px 0px;
+    box-shadow: 0px 0px 6px 0px #330074;
 }
 
 .navbar-links{
@@ -36,15 +37,85 @@
     font-size: 18px;
     color: gray;
 }
-.navbar-links div{
+.navbar-links a{
     height: 100%;
     width: calc(100% / 5);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.navbar-links div a{
     text-decoration: none;
-    color: #c9c9c9;
+    color: #9d32fb;
     transition: .5s;
+    font-family: 'REM', sans-serif;
+}
+
+.navbar-links > a{
+    position: relative;
+}
+.navbar-links > a::before{
+    content: '';
+    height: 8%;
+    width: 0%;
+    position: absolute;
+    background: linear-gradient(45deg, #0c1bc7, #a734ff);
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+.navbar-links > a:hover::before{
+    width: 100%;
+}
+
+.burger{
+    height: 24px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    border: 1px solid #822ef1;
+    border-radius: 4px;
+    gap: 5px;
+    position: absolute;
+    top: -45px;
+    right: 80px;
+}
+.line {
+    background: #7f2df1;
+    height: 1px;
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    #navbar{
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+        z-index: 3;
+    }
+    .navbar-profile{
+        padding-left: 40px;
+    }
+    .navbar-links{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background: gray;
+        width: 0%;
+        position: absolute;
+        top: 60px;
+        height: 94vh;
+        padding-left: 0px;
+        right: 0;
+        z-index: 10;
+        padding-top: 20px;
+        transition: .5s;
+    }
+    .navbar-links a{
+        justify-content: flex-start;
+        width: 100%;
+        height: 40px;
+        padding-left: 40px;
+    }
 }

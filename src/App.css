@@ -9,4 +9,31 @@ body{
   height: 100vh;
   background-color: #00040e;
   background-color: #212428;
+
+  
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* 1st phase */
+.deco1{
+  position: absolute;
+  top: -250px;
+  right: -160px;
+  height: 1040px;
+  width: 1040px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deco2{
+  position: absolute;
+  bottom: -400px;
+  left: -250px;
+  height: 820px;
+  width: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,233 @@
+%-------------------------
+% Rover Resume - Fancy Template
+% Link: https://github.com/subidit/rover-resume
+%------------------------
+
+\documentclass[11pt]{article}
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+% Use these two lines for uppercase X:
+\usepackage{amssymb}
+\DeclareUnicodeCharacter{1D54F}{$\mathbb{X}$}
+
+\usepackage[T1]{fontenc}
+\usepackage{inter} % https://tug.org/FontCatalogue/
+\renewcommand*\familydefault{\sfdefault}
+
+\usepackage{geometry}
+\geometry{
+a4paper,
+top=1.8cm,
+bottom=1in,
+left=2.5cm,
+right=2.5cm
+}
+
+\setcounter{secnumdepth}{0} % remove section numbering
+\pdfgentounicode=1 % make ATS friendly
+
+\usepackage{enumitem}
+\setlist[itemize]{
+    noitemsep,
+    left=0pt..1.5em
+}
+\setlist[description]{itemsep=0pt}
+\setlist[enumerate]{align=left}
+
+\usepackage[dvipsnames]{xcolor}
+% \usepackage[dvipsnames, svgnames, x11names]{xcolor} 
+% \usepackage[dvipsnames]{xcolor} % xcolor.pdf Sec.4 Colors by Name
+\colorlet{icnclr}{gray}
+% \colorlet [⟨type⟩]{⟨name⟩}[⟨num model⟩]{⟨color ⟩}
+% \definecolor[⟨type⟩]{⟨name⟩}{⟨model-list⟩}{⟨spec-list⟩}
+
+
+\usepackage{titlesec}
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+% \titlespacing{\section}{0pt}{*3}{*1}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
+\titleformat{\section}{\color{Sepia}\large\fontseries{black}\selectfont\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\large\fontseries{semibold}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\large\fontseries{medium}\selectfont}{}{}{}
+
+\usepackage{xhfill} 
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{1pt}[gray]} % add rule after title in .5 x-height 
+
+\newif\ifRemVS % remove vspace between \section & \subsection
+\newcommand{\rvs}{
+    \ifRemVS
+        \vspace{-1.5ex}
+    \fi
+    \global\RemVSfalse
+}
+
+
+\usepackage{fontawesome5}
+
+\usepackage[bookmarks=false]{hyperref} % [imp!]
+\hypersetup{ % https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+    colorlinks=true,
+    urlcolor=Sepia,
+    pdftitle={My Resume},
+}
+
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}	
+\fancyhf{}							
+\cfoot{\color{darkgray} Rover R\'esum\'e -- Page \thepage{} of \totalpages}
+
+
+\begin{document}
+
+%== HEADER ==%
+\begin{center}
+    {\fontsize{36}{36}\selectfont\interthin ADARSH\interheavy KUMAR} \\ \bigskip
+    {\faEnvelope[regular]} \href{mailto:adarshkumar20012704@gmail.com}{gmail} $|$ 
+    {\faIcon{mobile-alt}} \href{tel:9581420398}{9581420398} $|$
+    {\faGithub} \href{https://github.com/adarshkumar714}{adarshkumar714} $|$
+    {\faLinkedinIn} \href{https://www.linkedin.com/in/adarsh-kumar-123a34231/}{Adarsh Kumar} $|$
+    {$X$} \href{https://twitter.com/akn714/}{akn714}
+\end{center}
+
+\section{Education}
+%==============
+
+\subsection{Rajkiya Engineering College $|$ {\normalfont\textit{Mainpuri, Uttar Pradesh}} \hfill 2022 -- 2026}
+{B.Tech. - Major in Computer Science and Engineering \hfill CGPA: 8}
+% \begin{itemize}
+%     \item B.Tech. - Major in Computer Science and Engineering 
+%     \item Cumulative GPA: 8
+% \end{itemize}
+
+\subsection{Sarvajanik Vidyalaya $|$ {\normalfont\textit{Daman, Daman & Diu}} \hfill 2019 -- 2021}
+{11th - 12th Standard \hfill Percentage: 80%}
+% \begin{itemize}
+%     \item 11th - 12th Standard
+%     \item Percentage: 80%
+% \end{itemize}
+
+\subsection{Coast Guard Public School $|$ {\normalfont\textit{Daman, Daman & Diu}} \hfill 2018 -- 2019}
+{10th Standard \hfill Percentage: 71%}
+% \begin{itemize}
+%     \item 10th Standard
+%     \item Percentage: 71%
+% \end{itemize}
+
+\subsection{KVS - Kendriya Vidyalaya Sangathan \hfill 2010 -- 2018}
+{1st - 9th Standard \hfill Percentage: 85%}
+% \begin{itemize}
+%     \item 1st - 9th Standard
+% \end{itemize}
+
+    % \resumeEduheading
+    %   {KVS - Kendriya Vidyalaya Sangathan}{Visakhapatnam, Andhra Pradesh}
+    %   {Secondary}
+    %   {2010 -- 2018}
+    %   {}
+
+
+\section{About}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     I'm Adarsh Kumar, a B.Tech student majoring in Computer Science and Engineering. Proficient in JavaScript, Java, and Python, my passion lies in both frontend and backend projects, showcasing a diverse skill set in full-stack development.
+
+    In my journey, I've explored a range of technologies, fostering a keen interest in computer science intricacies. I'm dedicated to continuous learning and naturally inclined to explore hacking, alongside a fondness for the Linux operating system.
+    
+    My future aspirations involve building a career as a software developer, focusing on networking and web development. I aim to contribute meaningfully to projects, stay updated on emerging technologies, and actively engage in the evolving tech industry.
+    }}\\
+ \end{itemize}
+
+
+\section{Skills}
+%===============
+\begin{description}
+        \item \textbf{Languages:} \newline
+        Python, Javascript, Java, C/C++, Bash/Shell Scripting, HTML/CSS.
+        \item \textbf{Libraries / Frameworks / Tools:} \newline
+        Node.js, Flask, Langchain, Socket.IO, BeautifulSoup, Express.js, React.js, Mongoose, OpenAI, Pinecone, Telegram SDK, Discord SDK. Git/Github, Linux, Tmux.
+        \item \textbf{Experience in:} \newline
+        Object Oriented Programming Systems, Data Structures and Algorithms, TryHackMe, Generative AI, Web Development, CLI Development, Open Source Development.
+        \item \textbf{Achievements:} \newline
+        Certificate and 5-star rated in Python, Problem Solving, and Java on HackerRank. 1600 rating on CodeChef. 1000 rating on Codeforces. College best coder award.
+\end{description}
+
+
+\section{Relevant Courses}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    Data Structures and Algorithms, Computer Networks, Discrete Mathematical Structures, Command Line Interfaces, Computer Organization and Architecture, Networking, Cybersecurity, Engineering physics, Engineering maths 1, 2 & 3, Fundamentals of electrical engineering, Fundamentals of electronics engineering, programming of problem solving, fundamentals of mechanical engineering, soft skills, etc.
+    }}\\
+ \end{itemize}
+
+
+\section{Projects}
+%=================
+
+\subsection{V-Doc {\normalfont $|$ \href{https://github.com/adarshkumar714/V-Doc}{\textit{GitHub Link}}} \hfill Jul 2023 - Oct 2023}
+\begin{itemize}
+    \item Languages / Tools: Python, JavaScript. Flask, Langchain, Pinecone, React.js.
+    \item An AI assistant leveraging medication data to suggest appropriate treatments for various diseases and injuries, balancing efficacy with safety in its recommendations.
+\end{itemize}
+
+\subsection{cOLX {\normalfont $|$ \href{https://github.com/adarshkumar714/colx}{\textit{GitHub Link}}} \hfill Jul 2023 - Oct 2023}
+\begin{itemize}
+    \item Languages / Tools: JavaScript. Node.js, Express.js, React.js.
+    \item College OLX, A versatile college platform akin to OLX, enabling trade of second-hand items, lost and found posts, and maintenance requests.
+\end{itemize}
+
+\subsection{Discord AI Bot {\normalfont $|$ \href{https://github.com/adarshkumar714/Discord-AI-Bot}{\textit{GitHub Link}}} \hfill Jul 2023}
+\begin{itemize}
+    \item Language / Tools: Python. Pinecone, Discord SDK, Langchain.
+    \item A custom-trained Discord AI bot, seamlessly integrating ChatGPT with RAG, tailored to your data for enriched, contextually relevant interactions and responses.
+\end{itemize}
+
+\subsection{Chat Room {\normalfont $|$ \href{https://github.com/adarshkumar714/chat-room}{\textit{GitHub Link}}} \hfill Mar 2023 - Jun 2023}
+\begin{itemize}
+    \item Languages / Tools: Node.js, JavaScript. Express.js, Socket.io.
+    \item A dynamic real-time chat app for instant messaging and seamless communication.
+\end{itemize}
+
+\subsection{YouTube Ad Skipper {\normalfont $|$ \href{https://github.com/adarshkumar714/YT-Ad-Skipper}{\textit{GitHub Link}}} \hfill Apr 2023}
+\begin{itemize}
+    \item Languages / Tools: HTML, CSS, JavaScript. Chrome Dev tools.
+    \item A Chrome extension designed to effectively bypass YouTube ads, enhancing your video-watching experience without interruptions.
+\end{itemize}
+
+\subsection{Trash N Treasure {\normalfont $|$ \href{https://github.com/adarshkumar714/YT-Ad-Skipper}{\textit{GitHub Link}}} \hfill Jan 2024}
+\begin{itemize}
+    \item Languages / Tools: Node.js, JavaScript. Express.js, Socket.io, Nodemailer, MongoDB.
+    \item A web portal bridging communities and recycling industries, facilitating efficient waste management and promoting environmental sustainability.
+\end{itemize}
+
+\subsection{TelegramGPT {\normalfont $|$ \href{https://github.com/adarshkumar714/TelegramGPT}{\textit{GitHub Link}}} \hfill Oct 2024 - Nov 2023}
+\begin{itemize}
+    \item Language / Tools: Python. OpenAI SDK, Telegram SDK, Langchain, Pinecone.
+    \item An AI assistant for Telegram, utilizing the Retrieval-Augmented Generation (RAG) model, trained on custom data for enhanced, context-aware responses.
+\end{itemize}
+
+\subsection{Student Dashboard {\normalfont $|$ \href{https://github.com/adarshkumar714/Student-Dashboard}{\textit{GitHub Link}}} \hfill Oct 2024 - Present}
+\begin{itemize}
+    \item Languages / Tools: Node.js, HTML, CSS, JavaScript. Express.js, Mongoose, MongoDB, Nodemailer.
+    \item A web application featuring an interactive student dashboard, designed for engaging and streamlined access to educational resources and tools.
+\end{itemize}
+
+
+\section{Interests}
+\begin{description}
+    \item \textbf{Programming:} Proficient in JavaScript, Java, and Python.
+    \item \textbf{SaaS Development:} Challenges in both frontend and backend development.
+    \item \textbf{Computer Science:} Intricate concepts, especially in networking and web development.
+    \item \textbf{Hacking / Playing CTFs:} Exploring and applying cybersecurity principles.
+    \item \textbf{Continuous Learning:} Staying updated on emerging technologies.
+    \item \textbf{Linux Enthusiast:} Appreciation for the Linux operating system.
+\end{description}
+
+
+
+\end{document}

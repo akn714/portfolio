@@ -19,7 +19,9 @@
     align-items: center;
     /* width: 20%; */
     font-size: 30px;
-    color: #330074;
+    /* color: #330074; */
+    /* color: #ff5400; */
+    color: #cd1b1e;
     font-family: "Lovely Home";
 }
 .navbar-profile img{
@@ -27,15 +29,20 @@
     border-radius: 50%;
     box-shadow: 0px 0px 6px 0px #330074;
 }
+.navbar-profile div{
+    /* text-shadow: 10px 10px 10px #ff5400; */
+    text-shadow: 10px 10px 10px #cd1b1e;
+}
 
 .navbar-links{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 70%;
+    width: 0%;
     font-size: 18px;
     color: gray;
+    transition: 1s;
 }
 .navbar-links a{
     height: 100%;
@@ -57,6 +64,7 @@
     height: 8%;
     width: 0%;
     position: absolute;
+    /* background: linear-gradient(45deg, #0c1bc7, #a734ff); */
     background: linear-gradient(45deg, #0c1bc7, #a734ff);
     bottom: 0;
     left: 0;
@@ -85,6 +93,12 @@
     background: #7f2df1;
     height: 1px;
     width: 100%;
+}
+
+@media (min-width: 1100px) {
+    /* #navbar{
+        background-color: red;
+    } */
 }
 
 @media (max-width: 1100px) {

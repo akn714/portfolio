@@ -26,6 +26,11 @@ export default function Navbar() {
         }
         document.querySelector('.navbar-links').style.width = '0%'
         document.querySelector('.navbar-links').style.paddingLeft = '0px'
+        
+        window.onload = function(e){
+            document.querySelector('.navbar-links').style.width = '60%'
+            document.querySelector('.left').style.left = '0';
+        }
     })
 
   return (
@@ -59,6 +64,7 @@ export default function Navbar() {
             <a href="/education" className="/education">Education</a>
             <a href="/contact" className="contact">Contact</a>
         </div>
+        <script src='../../public/Navbar.js'></script>
     </div>
   )
 }

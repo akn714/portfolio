@@ -11,10 +11,23 @@ body{
   background-color: #212428;
   background-color: #e3ecff;
 
+  background: url('/home/pio/Desktop/adarsh data 5 jan 2024/data 4 jan 2024/adars-Desktop/D drive data/coding/github/portfolio/public/wallpaper1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* #000000c2 */
   
   position: absolute;
   overflow: hidden;
   width: 100vw;
+}
+#root::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: #0000007d;
+  background: linear-gradient(0deg, black, transparent);
+  position: absolute;
 }
 
 /* 1st phase */

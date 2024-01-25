@@ -1,0 +1,50 @@
+.main{
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section{
+    height: 100%;
+    width: 33.33%;
+    /* background-color: rgba(0, 0, 0, 0.479); */
+    position: relative;
+}
+.mainSec{
+    background-color: transparent;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1{
+    background: linear-gradient(90deg, #0000009c, #0000009c, transparent);
+    z-index: 1;
+}
+.sec3{
+    background: linear-gradient(-90deg, #0000009c, #0000009c, transparent);
+    z-index: 1;
+}
+
+.containers{
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+}
+.container{
+    height: 80%;
+    min-width: 300px;
+    max-width: 60%;
+    background-color: red;
+    border: 1px solid black;
+    border: 1px solid #4ecdd4;
+    color: #4ecdd4;
+    background: #091919;
+}
+

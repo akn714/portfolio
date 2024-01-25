@@ -6,6 +6,14 @@
     align-items: center;
     position: relative;
 }
+#root::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #0000007d;
+    background: linear-gradient(0deg, black, transparent);
+    position: absolute;
+}
 
 div#main > div {
     height: 100%;

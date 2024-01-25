@@ -21,14 +21,7 @@ body{
   overflow: hidden;
   width: 100vw;
 }
-#root::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: #0000007d;
-  background: linear-gradient(0deg, black, transparent);
-  position: absolute;
-}
+
 
 /* 1st phase */
 /* .deco1{

@@ -51,7 +51,8 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #9d32fb;
+    /* color: #9d32fb; */
+    color: #4ecdd4;
     transition: .5s;
     font-family: 'REM', sans-serif;
 }
@@ -61,11 +62,11 @@
 }
 .navbar-links > a::before{
     content: '';
-    height: 8%;
+    height: 2%;
     width: 0%;
     position: absolute;
     /* background: linear-gradient(45deg, #0c1bc7, #a734ff); */
-    background: linear-gradient(45deg, #0c1bc7, #a734ff);
+    background: #cd1b1e;
     bottom: 0;
     left: 0;
     transition: .5s;

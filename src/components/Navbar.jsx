@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react'
 import './Navbar.css'
+import {
+    Link,
+    Outlet
+} from "react-router-dom";
 
 export default function Navbar() {
 
@@ -34,37 +38,40 @@ export default function Navbar() {
     })
 
   return (
-    <div id='navbar'>
-        <a href='/' className="navbar-profile" style={{textDecoration: 'none'}}>
-            <img  className="navbar-profile-pic" src="./user-profile.png" alt="" />
-            <div className="title">Adarsh Kumar</div>
-        </a>
-        <div className='navbar-links'>
-            <button className="burger" onClick={(e)=>{
-                let navbarLinks = document.querySelector('.navbar-links');
-                if(navbarLinks.style.width=='0%'){
-                    document.querySelector('.burger').style.background = 'linear-gradient(45deg, #0c1bc7, #a734ff)'
-                    navbarLinks.style.width = '100%'
-                    document.querySelector('.navbar-links').style.paddingLeft = '20px'
-                }
-                else{
-                    document.querySelector('.burger').style.background = 'transparent'
-                    navbarLinks.style.width = '0%'
-                    document.querySelector('.navbar-links').style.paddingLeft = '0px'
-                    navbarLinks.style
-                }
-            }}>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-            </button>
-            <a href="/about" className="about">About</a>
-            <a href="/skills" className="skills">Skills</a>
-            <a href="/projects" className="projects">Projects</a>
-            <a href="/education" className="/education">Education</a>
-            <a href="/contact" className="contact">Contact</a>
+    <>
+        <div id='navbar'>
+            <a href='/' className="navbar-profile" style={{textDecoration: 'none'}}>
+                <img  className="navbar-profile-pic" src="./user-profile.png" alt="" />
+                <div className="title">Adarsh Kumar</div>
+            </a>
+            <div className='navbar-links'>
+                <button className="burger" onClick={(e)=>{
+                    let navbarLinks = document.querySelector('.navbar-links');
+                    if(navbarLinks.style.width=='0%'){
+                        document.querySelector('.burger').style.background = 'linear-gradient(45deg, #0c1bc7, #a734ff)'
+                        navbarLinks.style.width = '100%'
+                        document.querySelector('.navbar-links').style.paddingLeft = '20px'
+                    }
+                    else{
+                        document.querySelector('.burger').style.background = 'transparent'
+                        navbarLinks.style.width = '0%'
+                        document.querySelector('.navbar-links').style.paddingLeft = '0px'
+                        navbarLinks.style
+                    }
+                }}>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                </button>
+                <Link to="/about" className="about">About</Link>
+                <Link to="/skills" className="skills">Skills</Link>
+                <Link to="/projects" className="projects">Projects</Link>
+                <Link to="/education" className="education">Education</Link>
+                <Link to="/contact" className="contact">Contact</Link>
+            </div>
+            <script src='../../public/Navbar.js'></script>
         </div>
-        <script src='../../public/Navbar.js'></script>
-    </div>
+        <Outlet />
+    </>
   )
 }

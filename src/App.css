@@ -1,9 +1,13 @@
-html{
-  overflow: hidden;
-}
-body{
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Prevent scrolling on the whole page */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 #root{
   height: 100vh;
@@ -11,15 +15,19 @@ body{
   background-color: #212428;
   background-color: #e3ecff;
 
-  background: url('/home/pio/Desktop/adarsh data 5 jan 2024/data 4 jan 2024/adars-Desktop/D drive data/coding/github/portfolio/public/wallpaper1.jpeg');
+  background: url('/home/pio/Desktop/adarsh data 5 jan 2024/data 4 jan 2024/adars-Desktop/D drive data/coding/github/portfolio/public/wallpaper2.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 
   /* #000000c2 */
   
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100vw;
+
+
+  width: 100vw;
+  height: 100vh;
 }
 
 

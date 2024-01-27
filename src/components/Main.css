@@ -69,11 +69,12 @@ div#main > div {
 .links a{
     /* color: #ffffffc2; */
     text-decoration: none;
+    height: 44px;
 }
 
 .follow-me-on-github{
     background: linear-gradient(45deg, #0c1bc7, #a734ff);
-    height: 20px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +91,7 @@ div#main > div {
 
 .get-in-touch{
     background: gray;
-    height: 20px;
+    height:100%;
     display: flex;
     justify-content: center;
     align-items: center;

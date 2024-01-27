@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
+
+    height: 100%;
 }
 
 .section{
@@ -31,11 +34,18 @@
 .containers{
     height: 100%;
     /* width: 100%; */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 150px;
     position: relative;
+
+    padding-bottom: 30px;
+
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 .container{
     height: 80%;
@@ -43,8 +53,46 @@
     max-width: 60%;
     background-color: red;
     border: 1px solid black;
-    border: 1px solid #4ecdd4;
+    border: 1px solid #4ecdd45e;
     color: #4ecdd4;
     background: #091919;
+
+    margin: 50px auto;
+
+    height: 300px; /* Fixed height */
+    width: 750px; /* Fixed width */
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+
+    padding: 25px;
+}
+.project-title{
+    /* font-size: 25px; */
+}
+.project-desc{
+    color: #b3b3b3;
+    line-height: 25px;
+}
+.view-on-github{
+    color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    .containers{
+        max-width: 90%; /* Smaller width on smaller screens */
+    }
+
+    .container{
+        height: auto;
+        width: auto;
+        min-width: auto;
+        max-width: none;
+        gap: 14px;
+    }
+
+
 }
 

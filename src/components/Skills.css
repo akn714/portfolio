@@ -160,6 +160,10 @@
         margin-top: 0;
     }
 
+    .skill-title h2{
+        font-size: 20px;
+    }
+
     .skill-logo{
         height: 80px;
         width: 80px;

@@ -10,8 +10,8 @@ export default function App() {
     <>
       <Navbar />
       {/* <Main /> */}
-      <Projects />
-      {/* <Skills /> */}
+      {/* <Projects /> */}
+      <Skills />
     </>
   )
 }

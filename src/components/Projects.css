@@ -31,7 +31,7 @@
     z-index: 1;
 }
 
-.containers{
+.project-containers{
     height: 100%;
     /* width: 100%; */
     /* display: flex; */
@@ -47,7 +47,7 @@
     height: 100%; /* Full height */
     overflow-y: auto; /* Enable vertical scrolling */
 }
-.container{
+.project-container{
     height: 80%;
     min-width: 300px;
     max-width: 60%;
@@ -77,15 +77,24 @@
     line-height: 25px;
 }
 .view-on-github{
+    display: flex;
+    justify-content: end;
+}
+.view-on-github a{
     color: yellow;
+    text-decoration: none;
+}
+.view-on-github a:hover{
+    /* color: rgba(255, 255, 0, 0.582); */
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
-    .containers{
+    .project-containers{
         max-width: 90%; /* Smaller width on smaller screens */
     }
 
-    .container{
+    .project-container{
         height: auto;
         width: auto;
         min-width: auto;

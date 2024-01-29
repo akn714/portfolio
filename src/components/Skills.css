@@ -1,0 +1,170 @@
+
+.main {
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    height: 100%;
+}
+
+.section {
+    height: 100%;
+    width: 33.33%;
+    /* background-color: rgba(0, 0, 0, 0.479); */
+    position: relative;
+}
+
+.mainSec {
+    background-color: transparent;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 {
+    background: linear-gradient(90deg, #0000009c, #0000009c, transparent);
+    z-index: 1;
+}
+
+.sec3 {
+    background: linear-gradient(-90deg, #0000009c, #0000009c, transparent);
+    z-index: 1;
+}
+
+.skill-containers {
+    height: 100%;
+    /* width: 100%; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+    position: relative;
+
+    padding-bottom: 30px;
+
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}
+
+.skill-container {
+    /* height: 80%; */
+    min-width: 300px;
+    max-width: 60%;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    /* border: 1px solid #4ecdd45e; */
+    border: 1px solid #ff00ef82;
+    border-radius: 10px;
+    /* color: #4ecdd4; */
+    color: #ff7800;
+    color: #ff00ef82;
+    color: #ff00ef;
+    background: #091919;
+    background: #ecbadf;
+
+    margin: 50px auto;
+
+    min-height: 300px;
+    /* Fixed height */
+    width: 750px;
+    /* Fixed width */
+
+    display: flex;
+    /* justify-content: space-around; */
+    align-content: center;
+    flex-direction: column;
+
+    padding: 25px;
+}
+
+.skill-title {
+    /* font-size: 25px; */
+}
+.skill-icons{
+    display: flex;
+    /* background: red; */
+    height: inherit;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* gap: 20px; */
+}
+.skill-logo{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid gray; */
+    /* border-radius: 6px; */
+    padding: 4px;
+    /* background: #091919; */
+    /* border: 1px solid #4ecdd45e; */
+    /* background: blue; */
+}
+.skill-logo img{
+    /* height: inherit; */
+    /* width: 100%; */
+    height: 80%;
+    width: 80%;
+    /* align-self: center; */
+    margin: auto;
+}
+.skill-name{
+    /* text-align: center; */
+    /* height: 20%; */
+    margin: auto;
+    font-size: 12px;
+}
+
+.project-desc {
+    color: #b3b3b3;
+    line-height: 25px;
+}
+
+.view-on-github {
+    display: flex;
+    justify-content: end;
+}
+
+.view-on-github a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.view-on-github a:hover {
+    /* color: rgba(255, 255, 0, 0.582); */
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .skill-containers {
+        max-width: 90%;
+        /* Smaller width on smaller screens */
+    }
+
+    .skill-container {
+        height: auto;
+        width: auto;
+        min-width: auto;
+        max-width: none;
+        gap: 14px;
+        padding: 10px;
+    }
+
+    .skill-icons{
+        margin-top: 0;
+    }
+
+    .skill-logo{
+        height: 80px;
+        width: 80px;
+    }
+}

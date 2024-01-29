@@ -83,7 +83,7 @@
     align-items: center;
     flex-direction: column;
     background: transparent;
-    border: 1px solid #822ef1;
+    border: 1px solid #4ecdd4;
     border-radius: 4px;
     gap: 5px;
     position: absolute;
@@ -91,9 +91,9 @@
     right: 80px;
 }
 .line {
-    background: #7f2df1;
+    background: #4ecdd4;
     height: 1px;
-    width: 100%;
+    width: 80%;
 }
 
 @media (min-width: 1100px) {
@@ -110,13 +110,16 @@
         z-index: 3;
     }
     .navbar-profile{
-        padding-left: 40px;
+        /* padding-left: 40px; */
+    }
+    .burger{
+        right: 20px;
     }
     .navbar-links{
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        background: gray;
+        background: #091919;
         width: 0%;
         position: absolute;
         top: 60px;

@@ -19,7 +19,7 @@ export default function Main() {
                   <div>
                     Follow me on Github
                   </div>
-                  <img src="./github-mark.png" alt="" style={{height:'32px'}} />
+                  <img src="./github-mark.png" alt="" style={{height:'32px', filter:'contrast(0%)'}} />
                 </a>
                  {/* gmail link here */}
                 <a href="#" target='_blank' className="get-in-touch">
@@ -28,10 +28,38 @@ export default function Main() {
                   </div>
                 </a>
               </div>
+            <div className="profile-links">
+              <div>
+                <a href='https://github.com/adarshkumar714' className="profiles github" target='_blank'>
+                  <div className="website-logo">
+                    <img src="./github-mark.png" alt="github" style={{height:'33px'}} />
+                  </div>
+                  {/* <p>/adarshkumar714</p> */}
+                </a>
+                <a href='https://www.linkedin.com/in/adarsh-kumar-123a34231' className="profiles linkedin" target='_blank'>
+                  <div className="website-logo">
+                    <img src="./LI-In-Bug.png" alt="linkedin" style={{height:'28px'}} />
+                  </div>
+                  {/* <p>in/adarsh-kumar-123a34231</p> */}
+                </a>
+                <a href='https://twitter.com/akn714' className="profiles tweeter" target='_blank'>
+                  <div className="website-logo">
+                    <img src="./twitter-logo.png" alt="twitter" style={{height:'38px'}} />
+                  </div>  
+                  {/* <p>/AdarshK43393714</p> */}
+                </a>
+                <a href='mailto:adarshkumar20012704@gmail.com' className="profiles tweeter" target='_blank'>
+                  <div className="gmail-logo">
+                    <img src="./Gmail-Logo.png" alt="twitter" style={{height:'24px'}} />
+                  </div>
+                  {/* <p>adarshkumar20012704@gmail.com</p> */}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="right">
-          {/* <div> */}
+        {/* <div className="right">
+          <div>
             <div className='profile-image'>
                 <div className="img">
                   <img  className="navbar-profile-pic" src="./user-profile.png" alt="" />
@@ -41,32 +69,32 @@ export default function Main() {
               <div>
                 <a href='https://github.com/adarshkumar714' className="profiles github" target='_blank'>
                   <div className="website-logo">
-                    {/* <img src="./github-mark.png" alt="github" style={{height:'33px'}} /> */}
+                    <img src="./github-mark.png" alt="github" style={{height:'33px'}} />
                   </div>
                   <p>/adarshkumar714</p>
                 </a>
                 <a href='https://www.linkedin.com/in/adarsh-kumar-123a34231' className="profiles linkedin" target='_blank'>
                   <div className="website-logo">
-                    {/* <img src="./LI-In-Bug.png" alt="linkedin" style={{height:'28px'}} /> */}
+                    <img src="./LI-In-Bug.png" alt="linkedin" style={{height:'28px'}} />
                   </div>
                   <p>in/adarsh-kumar-123a34231</p>
                 </a>
                 <a href='https://twitter.com/AdarshK43393714' className="profiles tweeter" target='_blank'>
                   <div className="website-logo">
-                    {/* <img src="./twitter-logo.png" alt="twitter" style={{height:'38px'}} /> */}
+                    <img src="./twitter-logo.png" alt="twitter" style={{height:'38px'}} />
                   </div>  
                   <p>/AdarshK43393714</p>
                 </a>
                 <a href='mailto:adarshkumar20012704@gmail.com' className="profiles tweeter" target='_blank'>
                   <div className="gmail-logo">
-                    {/* <img src="./Gmail-Logo.png" alt="twitter" style={{height:'24px'}} /> */}
+                    <img src="./Gmail-Logo.png" alt="twitter" style={{height:'24px'}} />
                   </div>
                   <p>adarshkumar20012704@gmail.com</p>
                 </a>
               </div>
             </div>
           </div>
-        {/* </div> */}
+        </div> */}
       </div>
       {/* <div className="deco1">
         <div className="box1">

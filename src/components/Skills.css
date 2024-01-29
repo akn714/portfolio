@@ -62,14 +62,17 @@
     /* background-color: red; */
     /* border: 1px solid black; */
     /* border: 1px solid #4ecdd45e; */
-    border: 1px solid #ff00ef82;
+    /* border: 1px solid #ff00ef82; */
+    border: 1px solid #1e00ff;
     border-radius: 10px;
     /* color: #4ecdd4; */
     color: #ff7800;
     color: #ff00ef82;
-    color: #ff00ef;
+    /* color: #ff00ef; */
+    color: #1e00ff;
     background: #091919;
-    background: #ecbadf;
+    /* background: #ecbadf; */
+    background: #c0baec;;
 
     margin: 50px auto;
 
@@ -144,7 +147,7 @@
 @media screen and (max-width: 768px) {
     .skill-containers {
         max-width: 90%;
-        /* Smaller width on smaller screens */
+        padding-bottom: 100px;
     }
 
     .skill-container {

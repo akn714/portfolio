@@ -36,14 +36,15 @@ export default function Navbar() {
   return (
     <div id='navbar'>
         <a href='/' className="navbar-profile" style={{textDecoration: 'none'}}>
-            <img  className="navbar-profile-pic" src="./user-profile.png" alt="" />
+            {/* <img  className="navbar-profile-pic" src="./user-profile.png" alt="" /> */}
             <div className="title">Adarsh Kumar</div>
         </a>
         <div className='navbar-links'>
             <button className="burger" onClick={(e)=>{
                 let navbarLinks = document.querySelector('.navbar-links');
                 if(navbarLinks.style.width=='0%'){
-                    document.querySelector('.burger').style.background = 'linear-gradient(45deg, #0c1bc7, #a734ff)'
+                    // document.querySelector('.burger').style.background = 'linear-gradient(45deg, #0c1bc7, #a734ff))'
+                    document.querySelector('.burger').style.background = 'aqua'
                     navbarLinks.style.width = '100%'
                     document.querySelector('.navbar-links').style.paddingLeft = '20px'
                 }

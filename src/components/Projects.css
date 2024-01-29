@@ -90,6 +90,7 @@
 @media screen and (max-width: 768px) {
     .project-containers{
         max-width: 90%; /* Smaller width on smaller screens */
+        padding-bottom: 100px;
     }
 
     .project-container{
@@ -98,6 +99,7 @@
         min-width: auto;
         max-width: none;
         gap: 14px;
+        padding: 20px;
     }
 
     .project-title h2{

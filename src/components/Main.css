@@ -2,7 +2,7 @@
     /* background: gray; */
     height: calc(100% - 60px);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     position: relative;
 }
@@ -29,6 +29,15 @@ div#main > div {
     /* background: red; */
     left: -50%;
     transition: 1s;
+    margin-left: 100px;
+}
+.left > div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
 }
 .name{
     display: flex;
@@ -49,7 +58,8 @@ div#main > div {
     /* box-shadow: 0px 0px 0px 0px #4a0102; */
 }
 .small-desc{
-    width: 440px;
+    /* width: 440px; */
+    width: 80%;
     /* color: #797979; */
     color: #ffffff9e;
     font-family: system-ui;
@@ -61,7 +71,7 @@ div#main > div {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-top: 12px;
+    /* padding-top: 12px; */
     font-family: sans-serif;
     font-size: 17px;
 }
@@ -127,17 +137,27 @@ div#main > div {
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
-    flex-direction: column;
+    /* flex-direction: column; */
+    margin: 12px 0;
+    gap: 6px;
 }
 
 .profile-links a{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     color: #4ecdd4;
     text-decoration: none;
+    height: 50px;
+    width: 40px;
+    /* border: 1px solid #7f7f7f;
+    border-radius: 50%; */
+}
+
+.profiles img{
+    filter: contrast(0%);
 }
 
 /* .right > div > div */
@@ -333,3 +353,30 @@ a.profiles {
     from{ transform: rotate(360deg); }
     to{ transform: rotate(-360deg); }
 } */
+
+
+@media screen and (max-width: 768px) {
+    .left{
+        margin: 20px;
+        width: 100% !important;
+    }
+    .name{
+        font-size: 38px;
+    }
+    .small-desc{
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .links{
+        font-size: 16px;
+        flex-direction: column;
+    }
+    .links a{
+        width: 100%;
+    }
+    .follow-me-on-github{   
+        justify-content: space-between;
+    }
+
+
+}
